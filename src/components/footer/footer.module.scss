@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+
+    .footerItem {
+        width: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .active {
+        color: red;
+
+        .footerTitle {
+            color: red;
+        }
+    }
+
+    .footerIcon {
+        margin: 0 auto;
+    }
+
+    .footerTitle {
+        color: #159a34;
+    }
+}

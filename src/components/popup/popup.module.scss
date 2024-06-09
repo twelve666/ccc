@@ -1,0 +1,49 @@
+// 定义进出入动画
+.popup-showing {
+    animation: show 0.5s forwards;
+}
+
+.popup-fading {
+    animation: fade 0.5s forwards;
+}
+
+.popup-top {
+    transform: translateY(-100%);
+}
+
+.popup-bottom {
+    transform: translateY(100%);
+}
+
+.popup-left {
+    transform: translateX(-100%);
+}
+
+.popup-right {
+    transform: translateX(100%);
+}
+
+// 定义动画fade与show
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
